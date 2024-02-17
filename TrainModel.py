@@ -9,17 +9,17 @@ from torch.autograd import Variable
 from torchvision import transforms
 import torch.nn as nn
 
-from ImageDataset import ImageDataset
+from .ImageDataset import ImageDataset
 
-from BaseCNN import BaseCNN
-from DBCNN import DBCNN
-from MNL_Loss import Fidelity_Loss
+from .BaseCNN import BaseCNN
+from .DBCNN import DBCNN
+from .MNL_Loss import Fidelity_Loss
 
 #from E2euiqa import E2EUIQA
 #from MNL_Loss import L2_Loss, Binary_Loss
 #from Gdn import Gdn2d, Gdn1d
 
-from Transformers import AdaptiveResize
+from .Transformers import AdaptiveResize
 
 
 class Trainer(object):

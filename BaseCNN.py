@@ -1,6 +1,6 @@
 import torch.nn as nn
 from torchvision import models
-from BCNN import BCNN
+from .BCNN import BCNN
 
 class BaseCNN(nn.Module):
     def __init__(self, config):

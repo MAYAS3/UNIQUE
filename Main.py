@@ -1,5 +1,5 @@
 import argparse
-import TrainModel
+from .TrainModel import Trainer
 import scipy.io as sio
 import os
 
@@ -69,7 +69,7 @@ def parse_config():
 
 
 def main(cfg):
-    t = TrainModel.Trainer(cfg)
+    t = Trainer(cfg)
     if cfg.train:
         t.fit()
     elif cfg.get_scores:
